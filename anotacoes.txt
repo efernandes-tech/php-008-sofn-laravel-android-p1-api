@@ -6,3 +6,10 @@ PHP - SchoolOfNet - Laravel com Android - Parte 1
         composer create-project --prefer-dist laravel/laravel:5.3.* php-008-son-laravel-android
 - Alterando namespace da aplicação.
     php artisan app:name SON
+- Integração com JWT.
+    - Instalação:
+        composer require tymon/jwt-auth:0.5.9
+    - Configurar e publicar o provider.
+        php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\JWTAuthServiceProvider"
+    - Gerar a chave.
+        php artisan jwt:generate
