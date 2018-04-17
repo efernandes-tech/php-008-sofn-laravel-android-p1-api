@@ -35,4 +35,8 @@ PHP - SchoolOfNet - Laravel com Android - Parte 1
         composer require prettus/l5-repository:2.6.6
     - Publicar.
         php artisan vendor:publish --provider="Prettus\Repository\Providers\RepositoryServiceProvider"
-        
+- Criando repositorio para categorias.
+    - Criando entidade.
+        php artisan make:entity Category
+    - Criando seeder.
+        php artisan make:seeder CategoriesTableSeeder

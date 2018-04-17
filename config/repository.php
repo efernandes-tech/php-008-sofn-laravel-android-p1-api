@@ -220,9 +220,9 @@ return [
     */
     'generator'  => [
         'basePath'      => app_path(),
-        'rootNamespace' => 'App\\',
+        'rootNamespace' => 'SON\\',
         'paths'         => [
-            'models'       => 'Entities',
+            'models'       => 'Models',
             'repositories' => 'Repositories',
             'interfaces'   => 'Repositories',
             'transformers' => 'Transformers',

@@ -2,7 +2,7 @@
 
 namespace SON\Http\Controllers\Auth;
 
-use SON\User;
+use SON\Models\User;
 use SON\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
