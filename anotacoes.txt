@@ -4,3 +4,5 @@ PHP - SchoolOfNet - Laravel com Android - Parte 1
 - Introdução.
     Criando novo projeto laravel.
         composer create-project --prefer-dist laravel/laravel:5.3.* php-008-son-laravel-android
+- Alterando namespace da aplicação.
+    php artisan app:name SON
