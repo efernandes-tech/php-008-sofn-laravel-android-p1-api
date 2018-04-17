@@ -1,0 +1,6 @@
+PHP - SchoolOfNet - Laravel com Android - Parte 1
+
+# Anotações
+- Introdução.
+    Criando novo projeto laravel.
+        composer create-project --prefer-dist laravel/laravel:5.3.* php-008-son-laravel-android
