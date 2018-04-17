@@ -19,6 +19,8 @@ Route::get('/user', function (Request $request) {
 
 Route::post('login', 'Api\AuthController@login');
 
+Route::post('refresh_token', 'Api\AuthController@refreshToken');
+
 Route::group(['middleware' => 'jwt.auth'], function () {
     Route::post('logout', 'Api\AuthController@logout');
 });
