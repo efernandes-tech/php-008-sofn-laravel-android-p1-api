@@ -30,3 +30,9 @@ PHP - SchoolOfNet - Laravel com Android - Parte 1
                 "email" : "admin@schoolofnet.com",
                 "password" : "secret"
             }
+- Iniciando com repositories.
+    - Instalação.
+        composer require prettus/l5-repository:2.6.6
+    - Publicar.
+        php artisan vendor:publish --provider="Prettus\Repository\Providers\RepositoryServiceProvider"
+        
