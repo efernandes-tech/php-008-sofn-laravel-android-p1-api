@@ -299,6 +299,44 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "http://localhost:1337/api/categories/1 (Deletar)",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdDoxMzM3XC9hcGlcL2xvZ2luIiwiaWF0IjoxNTI0MDYxOTc0LCJleHAiOjE1MjQwNjU1NzQsIm5iZiI6MTUyNDA2MTk3NCwianRpIjoiZTk2ZGI4ZDIyMWI5YjUyYjhmNzlkYmI4OTQ2NTUzNmUifQ.mSiY7gwHHxX-LyO_ENx5MCSInO95DEyCEgsSfkAk4JI"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Categoria 2\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:1337/api/categories/51",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"categories",
+						"51"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
