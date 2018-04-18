@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "http://localhost:1337/api/login (Gerar token)",
+			"name": "Login - Gerar token",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -39,7 +39,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:1337/api/logout (Expirar token)",
+			"name": "Login - Expirar token",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -76,7 +76,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:1337/api/refresh_token (Revalidar token)",
+			"name": "Login - Revalidar token",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -90,7 +90,7 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdDoxMzM3XC9hcGlcL2xvZ2luIiwiaWF0IjoxNTIzOTk2MzMzLCJleHAiOjE1MjM5OTk5MzMsIm5iZiI6MTUyMzk5NjMzMywianRpIjoiZmFlMDJlNWVhYTYyMzc3N2IzZjk4M2YyNjU3YjA3YmYifQ.iNRSsWMguPw-dLGqTSUONZFEXyJ9J-vs48dK8no7Y78"
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdDoxMzM3XC9hcGlcL2xvZ2luIiwiaWF0IjoxNTI0MDYxOTc0LCJleHAiOjE1MjQwNjU1NzQsIm5iZiI6MTUyNDA2MTk3NCwianRpIjoiZTk2ZGI4ZDIyMWI5YjUyYjhmNzlkYmI4OTQ2NTUzNmUifQ.mSiY7gwHHxX-LyO_ENx5MCSInO95DEyCEgsSfkAk4JI"
 					}
 				],
 				"body": {
@@ -113,7 +113,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:1337/api/categories (Listar)",
+			"name": "Categories - Retrieve (cRud) - Listar todos",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -127,7 +127,7 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdDoxMzM3XC9hcGlcL2xvZ2luIiwiaWF0IjoxNTI0MDU0NzYwLCJleHAiOjE1MjQwNTgzNjAsIm5iZiI6MTUyNDA1NDc2MCwianRpIjoiZGQ4NWZkOWZhMDg0ODEzNzNiZDZhMmU2YmI2NTllOWEifQ.r6lUdmq2kRAVAbehqEBU7ohuojMWJ5oQkw07bQqQeoI"
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdDoxMzM3XC9hcGlcL2xvZ2luIiwiaWF0IjoxNTI0MDY0MzUwLCJleHAiOjE1MjQwNjc5NTAsIm5iZiI6MTUyNDA2NDM1MCwianRpIjoiZTc3YjE1ZDE5ZmE0NGJjYWM5MTEzNjQ4ZWFlMzQzOTEifQ.yZlnx28Jrfwp0HI0zhQN9vUsciNls8WBfHXqePpwjDE"
 					}
 				],
 				"body": {
@@ -150,7 +150,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:1337/api/categories/1 (Buscar 1)",
+			"name": "Categories - Retrieve (cRud) - Listar um",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -188,7 +188,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:1337/api/categories/121331321 (Erro buscar 1)",
+			"name": "Categories - Retrieve (cRud) - Erro listar 1",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -226,7 +226,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:1337/api/categories (Cadastrar)",
+			"name": "Categories - Create (Crud) - Cadastrar",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -263,7 +263,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:1337/api/categories/1 (Atualizar)",
+			"name": "Categories - Update (crUd) - Editar",
 			"request": {
 				"method": "PUT",
 				"header": [
@@ -301,7 +301,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:1337/api/categories/1 (Deletar)",
+			"name": "Categories - Delete (cruD) - Deletar",
 			"request": {
 				"method": "DELETE",
 				"header": [
@@ -333,6 +333,157 @@
 						"api",
 						"categories",
 						"51"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BillPays - Retrieve (cRud) - Listar todos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdDoxMzM3XC9hcGlcL2xvZ2luIiwiaWF0IjoxNTI0MDcwODg5LCJleHAiOjE1MjQwNzQ0ODksIm5iZiI6MTUyNDA3MDg4OSwianRpIjoiMmVkYzc3NzBmY2FhYWQ1MGYzMGJiNmU2MDcyYzNiMGIifQ.Hz9p62cZu3se8eaAY8xQ4lLUBHnAmmXfDNAiMyWTzgI"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"admin@schoolofnet.com\",\r\n    \"password\" : \"secret\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:1337/api/bill_pays/21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"bill_pays",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BillPays - Create (Crud) - Cadastrar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdDoxMzM3XC9hcGlcL2xvZ2luIiwiaWF0IjoxNTI0MDcwODg5LCJleHAiOjE1MjQwNzQ0ODksIm5iZiI6MTUyNDA3MDg4OSwianRpIjoiMmVkYzc3NzBmY2FhYWQ1MGYzMGJiNmU2MDcyYzNiMGIifQ.Hz9p62cZu3se8eaAY8xQ4lLUBHnAmmXfDNAiMyWTzgI"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"teste\",\r\n    \"date_due\" : \"2018-04-18\",\r\n    \"value\" : 23.31,\r\n    \"category_id\" : 1\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:1337/api/bill_pays",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"bill_pays"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BillPays - Update (crUd) - Editar",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdDoxMzM3XC9hcGlcL2xvZ2luIiwiaWF0IjoxNTI0MDcwODg5LCJleHAiOjE1MjQwNzQ0ODksIm5iZiI6MTUyNDA3MDg4OSwianRpIjoiMmVkYzc3NzBmY2FhYWQ1MGYzMGJiNmU2MDcyYzNiMGIifQ.Hz9p62cZu3se8eaAY8xQ4lLUBHnAmmXfDNAiMyWTzgI"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"teste 2\",\r\n    \"date_due\" : \"2018-04-18\",\r\n    \"value\" : 23.31,\r\n    \"category_id\" : 1,\r\n    \"done\" : true\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:1337/api/bill_pays/21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"bill_pays",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BillPays - Delete (cruD) - Deletar",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdDoxMzM3XC9hcGlcL2xvZ2luIiwiaWF0IjoxNTI0MDcwODg5LCJleHAiOjE1MjQwNzQ0ODksIm5iZiI6MTUyNDA3MDg4OSwianRpIjoiMmVkYzc3NzBmY2FhYWQ1MGYzMGJiNmU2MDcyYzNiMGIifQ.Hz9p62cZu3se8eaAY8xQ4lLUBHnAmmXfDNAiMyWTzgI"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"teste 2\",\r\n    \"date_due\" : \"2018-04-18\",\r\n    \"value\" : 23.31,\r\n    \"category_id\" : 1,\r\n    \"done\" : true\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:1337/api/bill_pays/21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"bill_pays",
+						"21"
 					]
 				}
 			},

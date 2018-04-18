@@ -10,6 +10,12 @@ class BillPay extends Model implements Transformable
 {
     use TransformableTrait;
 
-    protected $fillable = [];
+    protected $fillable = [
+        'name',
+        'date_due',
+        'value',
+        'done',
+        'category_id',
+    ];
 
 }
