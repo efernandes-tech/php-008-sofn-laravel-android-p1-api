@@ -29,6 +29,6 @@ $factory->define(SON\Models\User::class, function (Faker\Generator $faker) {
 $factory->define(SON\Models\Category::class, function (Faker\Generator $faker) {
     return [
         'name'    => $faker->name,
-        'user_id' => rand(1, 21),
+        // 'user_id' => rand(1, 21),
     ];
 });
