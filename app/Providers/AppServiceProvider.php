@@ -2,6 +2,7 @@
 
 namespace SON\Providers;
 
+use HipsterJazzbo\Landlord\TenantManager;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,7 +14,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+
     }
 
     /**

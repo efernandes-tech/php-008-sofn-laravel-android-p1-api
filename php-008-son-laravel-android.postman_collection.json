@@ -240,7 +240,7 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdDoxMzM3XC9hcGlcL2xvZ2luIiwiaWF0IjoxNTI0MDU3NzMxLCJleHAiOjE1MjQwNjEzMzEsIm5iZiI6MTUyNDA1NzczMSwianRpIjoiMmNkMjU3NDAyODY5MGE2ZWE5MmIyNmM3YWQ3NTNjMmQifQ.TS3L6A2gJfdVzUg19LEx1zGn98UZdJfRS7Tt60Eo9Sw"
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIyLCJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6MTMzN1wvYXBpXC9sb2dpbiIsImlhdCI6MTUyNDA4MTAyMCwiZXhwIjoxNTI0MDg0NjIwLCJuYmYiOjE1MjQwODEwMjAsImp0aSI6IjU3ODhmNDYwNzcyNzY0Y2ZlNTdkMTA3NDUzODFjOGEwIn0.2Y1ijg-uW6LkS8LDFMf1uDhojE2DV1cDX8jMaPhALXQ"
 					}
 				],
 				"body": {
@@ -353,7 +353,7 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdDoxMzM3XC9hcGlcL2xvZ2luIiwiaWF0IjoxNTI0MDcwODg5LCJleHAiOjE1MjQwNzQ0ODksIm5iZiI6MTUyNDA3MDg4OSwianRpIjoiMmVkYzc3NzBmY2FhYWQ1MGYzMGJiNmU2MDcyYzNiMGIifQ.Hz9p62cZu3se8eaAY8xQ4lLUBHnAmmXfDNAiMyWTzgI"
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIyLCJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6MTMzN1wvYXBpXC9sb2dpbiIsImlhdCI6MTUyNDA3NjkyOCwiZXhwIjoxNTI0MDgwNTI4LCJuYmYiOjE1MjQwNzY5MjgsImp0aSI6ImM1ODQyNDRkMzk0YTY3ZGI2Mzg1YTBjYzg2MzEzMGQzIn0.xAsmx76VTyzZX90wW3xwtO24nku99O5opbCPF05TU_Q"
 					}
 				],
 				"body": {
@@ -550,6 +550,43 @@
 					"path": [
 						"api",
 						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users - Listar",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIyLCJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6MTMzN1wvYXBpXC9sb2dpbiIsImlhdCI6MTUyNDA4MTAyMCwiZXhwIjoxNTI0MDg0NjIwLCJuYmYiOjE1MjQwODEwMjAsImp0aSI6IjU3ODhmNDYwNzcyNzY0Y2ZlNTdkMTA3NDUzODFjOGEwIn0.2Y1ijg-uW6LkS8LDFMf1uDhojE2DV1cDX8jMaPhALXQ"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"admin@schoolofnet.com\",\r\n    \"password\" : \"secret\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:1337/api/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"categories"
 					]
 				}
 			},

@@ -3,8 +3,8 @@
 namespace SON\Http\Controllers\Auth;
 
 use SON\Models\User;
+use Validator;
 use SON\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller
@@ -23,7 +23,7 @@ class RegisterController extends Controller
     use RegistersUsers;
 
     /**
-     * Where to redirect users after registration.
+     * Where to redirect users after login / registration.
      *
      * @var string
      */
@@ -58,7 +58,7 @@ class RegisterController extends Controller
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return User
+     * @return \SON\Models\User
      */
     protected function create(array $data)
     {

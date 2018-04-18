@@ -4,7 +4,6 @@ namespace SON\Repositories;
 
 use Prettus\Repository\Eloquent\BaseRepository;
 use Prettus\Repository\Criteria\RequestCriteria;
-use SON\Repositories\CategoryRepository;
 use SON\Models\Category;
 
 /**
@@ -31,5 +30,10 @@ class CategoryRepositoryEloquent extends BaseRepository implements CategoryRepos
     public function boot()
     {
         $this->pushCriteria(app(RequestCriteria::class));
+    }
+
+    public function applyMultitenancy()
+    {
+        Category::clearBootedModels();
     }
 }

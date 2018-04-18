@@ -4,9 +4,7 @@ namespace SON\Repositories;
 
 use Prettus\Repository\Eloquent\BaseRepository;
 use Prettus\Repository\Criteria\RequestCriteria;
-use SON\Repositories\BillPayRepository;
 use SON\Models\BillPay;
-use SON\Validators\BillPayValidator;
 
 /**
  * Class BillPayRepositoryEloquent
@@ -24,7 +22,6 @@ class BillPayRepositoryEloquent extends BaseRepository implements BillPayReposit
         return BillPay::class;
     }
 
-    
 
     /**
      * Boot up the repository, pushing criteria
@@ -32,5 +29,10 @@ class BillPayRepositoryEloquent extends BaseRepository implements BillPayReposit
     public function boot()
     {
         $this->pushCriteria(app(RequestCriteria::class));
+    }
+
+    public function applyMultitenancy()
+    {
+        BillPay::clearBootedModels();
     }
 }

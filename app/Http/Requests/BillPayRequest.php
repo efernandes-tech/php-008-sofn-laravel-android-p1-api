@@ -23,17 +23,15 @@ class BillPayRequest extends FormRequest
      */
     public function rules()
     {
-        $rules =  [
+        $rules = [
             'name' => 'required|max:255',
             'date_due' => 'required|date',
             'value' => 'required|numeric',
-            'category_id' => 'required|exists:categories,id',
+            'category_id' => 'required|exists:categories,id'
         ];
-
-        if ($this->isMethod('put')) {
+        if($this->isMethod('put')){
             $rules['done'] = 'required|boolean';
         }
-
         return $rules;
     }
 }

@@ -179,8 +179,7 @@ return [
         // SON\Providers\BroadcastServiceProvider::class,
         SON\Providers\EventServiceProvider::class,
         SON\Providers\RouteServiceProvider::class,
-        SON\Providers\RepositoryServiceProvider::class,
-
+        SON\Providers\RepositoryServiceProvider::class
     ],
 
     /*
@@ -230,8 +229,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
         'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
-        'Landlord' => HipsterJazzbo\Landlord\Facades\Landlord::class
-
+        'Landlord' => \HipsterJazzbo\Landlord\Facades\Landlord::class
     ],
 
 ];

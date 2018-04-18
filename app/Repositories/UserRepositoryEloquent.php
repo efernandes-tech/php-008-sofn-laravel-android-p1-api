@@ -2,10 +2,11 @@
 
 namespace SON\Repositories;
 
-use Prettus\Repository\Criteria\RequestCriteria;
 use Prettus\Repository\Eloquent\BaseRepository;
-use SON\Models\User;
+use Prettus\Repository\Criteria\RequestCriteria;
 use SON\Repositories\UserRepository;
+use SON\Models\User;
+use SON\Validators\UserValidator;
 
 /**
  * Class UserRepositoryEloquent
@@ -13,15 +14,12 @@ use SON\Repositories\UserRepository;
  */
 class UserRepositoryEloquent extends BaseRepository implements UserRepository
 {
-    /**
-     * @param array $attributes
-     */
     public function create(array $attributes)
     {
         $attributes['password'] = bcrypt($attributes['password']);
-
         return parent::create($attributes);
     }
+
 
     /**
      * Specify Model class name
@@ -32,6 +30,8 @@ class UserRepositoryEloquent extends BaseRepository implements UserRepository
     {
         return User::class;
     }
+
+    
 
     /**
      * Boot up the repository, pushing criteria
