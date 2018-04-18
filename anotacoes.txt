@@ -55,3 +55,10 @@ PHP - SchoolOfNet - Laravel com Android - Parte 1
 - CRUD de contas a pagar.
     - Atualizar migrations e seeders.
         php artisan migrate:refresh --seed
+- Registrando usuários.
+    - Criar repositório.
+        php artisan make:repository User
+    - Criar controller.
+        php artisan make:controller Api/UsersController
+    - Criar request.
+        php artisan make:request UserRequest
