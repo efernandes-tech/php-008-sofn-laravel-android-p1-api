@@ -40,3 +40,8 @@ PHP - SchoolOfNet - Laravel com Android - Parte 1
         php artisan make:entity Category
     - Criando seeder.
         php artisan make:seeder CategoriesTableSeeder
+- Listando categorias.
+    - Listando as rotas da aplicação.
+        php artisan route:list
+    - Atualizar migrações e seeders.
+        php artisan migrate:refresh --seed

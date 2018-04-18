@@ -23,4 +23,5 @@ Route::post('refresh_token', 'Api\AuthController@refreshToken');
 
 Route::group(['middleware' => 'jwt.auth'], function () {
     Route::post('logout', 'Api\AuthController@logout');
+    Route::resource('categories', 'Api\CategoriesController', ['except' => ['create', 'edit']]);
 });

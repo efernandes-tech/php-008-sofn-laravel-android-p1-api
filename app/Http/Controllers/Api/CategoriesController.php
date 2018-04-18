@@ -3,16 +3,16 @@
 namespace SON\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
-use Prettus\Validator\Contracts\ValidatorInterface;
 use Prettus\Validator\Exceptions\ValidatorException;
 use SON\Http\Requests\CategoryCreateRequest;
 use SON\Http\Requests\CategoryUpdateRequest;
 use SON\Repositories\CategoryRepository;
+use SON\Http\Controllers\Controller;
 
 class CategoriesController extends Controller
 {
     /**
-     * @var CategoryRepository
+     * @var mixed
      */
     protected $repository;
 
@@ -25,23 +25,11 @@ class CategoriesController extends Controller
     }
 
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
+     * @return mixed
      */
     public function index()
     {
-        $this->repository->pushCriteria(app('Prettus\Repository\Criteria\RequestCriteria'));
-        $categories = $this->repository->all();
-
-        if (request()->wantsJson()) {
-
-            return response()->json([
-                'data' => $categories,
-            ]);
-        }
-
-        return view('categories.index', compact('categories'));
+        return $this->repository->all();
     }
 
     /**
@@ -81,39 +69,12 @@ class CategoriesController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  int $id
-     *
-     * @return \Illuminate\Http\Response
+     * @param $id
+     * @return mixed
      */
     public function show($id)
     {
-        $category = $this->repository->find($id);
-
-        if (request()->wantsJson()) {
-
-            return response()->json([
-                'data' => $category,
-            ]);
-        }
-
-        return view('categories.show', compact('category'));
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int $id
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-
-        $category = $this->repository->find($id);
-
-        return view('categories.edit', compact('category'));
+        return $this->repository->find($id);
     }
 
     /**
