@@ -28,7 +28,18 @@ $factory->define(SON\Models\User::class, function (Faker\Generator $faker) {
 
 $factory->define(SON\Models\Category::class, function (Faker\Generator $faker) {
     return [
-        'name'    => $faker->name,
+        'name' => $faker->name,
         // 'user_id' => rand(1, 21),
+    ];
+});
+
+$factory->define(SON\Models\BillPay::class, function (Faker\Generator $faker) {
+    return [
+        'name'        => $faker->name,
+        'date_due'    => $faker->date(),
+        'value'       => $faker->randomFloat(2, 100, 1000),
+        'done'        => (bool) rand(0, 1),
+        'category_id' => rand(1, 50),
+        // 'user_id'     => rand(1, 21),
     ];
 });

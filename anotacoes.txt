@@ -45,3 +45,10 @@ PHP - SchoolOfNet - Laravel com Android - Parte 1
         php artisan route:list
     - Atualizar migrações e seeders.
         php artisan migrate:refresh --seed
+- Criando repositório para contas a pagar.
+    - Criando migration e seeder.
+        php artisan make:entity BillPay
+        php artisan make:seeder BillPaysTableSeeder
+        php artisan migrate:refresh --seed
+    - Acessando o banco de dados.
+        sqlite3 database/database.sqlite

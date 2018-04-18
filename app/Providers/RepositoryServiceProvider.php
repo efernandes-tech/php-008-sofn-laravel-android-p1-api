@@ -24,6 +24,7 @@ class RepositoryServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind(\SON\Repositories\CategoryRepository::class, \SON\Repositories\CategoryRepositoryEloquent::class);
+        $this->app->bind(\SON\Repositories\BillPayRepository::class, \SON\Repositories\BillPayRepositoryEloquent::class);
         //:end-bindings:
     }
 }
