@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f56f892656fb5d477198479f1128d6b7",
+    "content-hash": "b44e85d75ea7169c9cc0cfe80875a092",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -159,6 +159,54 @@
                 "string"
             ],
             "time": "2018-01-09T20:05:19+00:00"
+        },
+        {
+            "name": "hipsterjazzbo/landlord",
+            "version": "v2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/HipsterJazzbo/Landlord.git",
+                "reference": "273b973b144cc4e73135dc6d1e8c0c009ed413f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/HipsterJazzbo/Landlord/zipball/273b973b144cc4e73135dc6d1e8c0c009ed413f7",
+                "reference": "273b973b144cc4e73135dc6d1e8c0c009ed413f7",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.2.*|5.3.*",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "laravel/framework": "5.2.*|5.3.*",
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "5.5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "HipsterJazzbo\\Landlord\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caleb Fidecaro",
+                    "email": "calebfidecaro@gmail.com"
+                }
+            ],
+            "description": "A simple, single database multi-tenancy solution for Laravel 5.2+",
+            "keywords": [
+                "multitenancy",
+                "multitenant",
+                "tenancy",
+                "tenant"
+            ],
+            "time": "2016-10-30T23:16:08+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
