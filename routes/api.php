@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
-
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -11,7 +9,7 @@ use Illuminate\Http\Request;
 | routes are loaded by the RouteServiceProvider within a group which
 | is assigned the "api" middleware group. Enjoy building your API!
 |
- */
+*/
 
 Route::get('/user', function (Request $request) {
     return $request->user();
@@ -29,3 +27,4 @@ Route::group(['middleware' => ['jwt.auth', 'tenant'] ], function () {
     Route::get('bill_pays/total', 'Api\BillPaysController@calculateTotal');
     Route::resource('bill_pays', 'Api\BillPaysController', ['except' => ['create', 'edit']]);
 });
+

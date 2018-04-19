@@ -3,6 +3,8 @@ PHP - SchoolOfNet - Laravel com Android - Parte 1
 # Anotações
 - Servidor.
     php -S localhost:1337 -t public public\index.php
+    ou
+    php artisan serve --port=1337
 - Introdução.
     Criando novo projeto laravel.
         composer create-project --prefer-dist laravel/laravel:5.3.* php-008-son-laravel-android
@@ -77,3 +79,10 @@ PHP - SchoolOfNet - Laravel com Android - Parte 1
 - Iniciando com fractal.
     - Instalação.
         composer require league/fractal
+- Documentação de API com Swagger.
+    - Instalação.
+        composer require "darkaonline/l5-swagger:~3.0"
+    - Publicar.
+        php artisan l5-swagger:publish
+    - Acessar.
+        http://localhost:1337/api/documentation
