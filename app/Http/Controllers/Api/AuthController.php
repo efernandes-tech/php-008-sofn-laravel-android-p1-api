@@ -12,8 +12,9 @@ class AuthController extends Controller
      * @SWG\Info(title="School of Net - SON Financeiro API", version="0.0.1")
      */
 
+
     /**
-     * Requisitar token JWT.
+     * Requisitar token JWT
      *
      * @SWG\POST(
      *     path="/api/login",
@@ -25,7 +26,7 @@ class AuthController extends Controller
      *          )
      *     ),
      *     @SWG\Response(
-     *         response="200", description="Token JWT"
+     *      response="200", description="Token JWT"
      *     )
      * )
      */

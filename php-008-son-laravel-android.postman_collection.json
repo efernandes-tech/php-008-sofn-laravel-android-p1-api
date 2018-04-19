@@ -127,7 +127,7 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdDoxMzM3XC9hcGlcL2xvZ2luIiwiaWF0IjoxNTI0MDY0MzUwLCJleHAiOjE1MjQwNjc5NTAsIm5iZiI6MTUyNDA2NDM1MCwianRpIjoiZTc3YjE1ZDE5ZmE0NGJjYWM5MTEzNjQ4ZWFlMzQzOTEifQ.yZlnx28Jrfwp0HI0zhQN9vUsciNls8WBfHXqePpwjDE"
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdDoxMzM3XC9hcGlcL2xvZ2luIiwiaWF0IjoxNTI0MTYzNjcyLCJleHAiOjE1MjQxNjcyNzIsIm5iZiI6MTUyNDE2MzY3MiwianRpIjoiNjY4MTExMDlhNWQ5MWIyYmQwMjlmMDgzNjE0YTA2YzcifQ.L-SCBLIivWVU78IFtUw6GZIJvthfqTVRjsMAoJJPo3A"
 					}
 				],
 				"body": {
@@ -240,7 +240,7 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIyLCJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6MTMzN1wvYXBpXC9sb2dpbiIsImlhdCI6MTUyNDA4MTAyMCwiZXhwIjoxNTI0MDg0NjIwLCJuYmYiOjE1MjQwODEwMjAsImp0aSI6IjU3ODhmNDYwNzcyNzY0Y2ZlNTdkMTA3NDUzODFjOGEwIn0.2Y1ijg-uW6LkS8LDFMf1uDhojE2DV1cDX8jMaPhALXQ"
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIyLCJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6MTMzN1wvYXBpXC9sb2dpbiIsImlhdCI6MTUyNDE2MTAwNywiZXhwIjoxNTI0MTY0NjA3LCJuYmYiOjE1MjQxNjEwMDcsImp0aSI6ImNiYmIxMmM1MzJkZmEyNGUzYmNjMTk0MTYyZjUzZDM5In0.dpC2txkkhsVQkLYoVxxj5HFZELxxKVcqIzrnS9jj2EA"
 					}
 				],
 				"body": {
@@ -353,7 +353,7 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIyLCJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6MTMzN1wvYXBpXC9sb2dpbiIsImlhdCI6MTUyNDA3NjkyOCwiZXhwIjoxNTI0MDgwNTI4LCJuYmYiOjE1MjQwNzY5MjgsImp0aSI6ImM1ODQyNDRkMzk0YTY3ZGI2Mzg1YTBjYzg2MzEzMGQzIn0.xAsmx76VTyzZX90wW3xwtO24nku99O5opbCPF05TU_Q"
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIyLCJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6MTMzN1wvYXBpXC9sb2dpbiIsImlhdCI6MTUyNDE2MTAwNywiZXhwIjoxNTI0MTY0NjA3LCJuYmYiOjE1MjQxNjEwMDcsImp0aSI6ImNiYmIxMmM1MzJkZmEyNGUzYmNjMTk0MTYyZjUzZDM5In0.dpC2txkkhsVQkLYoVxxj5HFZELxxKVcqIzrnS9jj2EA"
 					}
 				],
 				"body": {
@@ -361,7 +361,7 @@
 					"raw": "{\r\n    \"email\" : \"admin@schoolofnet.com\",\r\n    \"password\" : \"secret\"\r\n}"
 				},
 				"url": {
-					"raw": "http://localhost:1337/api/bill_pays/21",
+					"raw": "http://localhost:1337/api/bill_pays",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -369,8 +369,44 @@
 					"port": "1337",
 					"path": [
 						"api",
-						"bill_pays",
-						"21"
+						"bill_pays"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BillPays - Retrieve (cRud) - Listar todos Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIyLCJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6MTMzN1wvYXBpXC9sb2dpbiIsImlhdCI6MTUyNDE2MTAwNywiZXhwIjoxNTI0MTY0NjA3LCJuYmYiOjE1MjQxNjEwMDcsImp0aSI6ImNiYmIxMmM1MzJkZmEyNGUzYmNjMTk0MTYyZjUzZDM5In0.dpC2txkkhsVQkLYoVxxj5HFZELxxKVcqIzrnS9jj2EA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"admin@schoolofnet.com\",\r\n    \"password\" : \"secret\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:1337/api/bill_pays",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"bill_pays"
 					]
 				}
 			},
@@ -391,12 +427,12 @@
 					},
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdDoxMzM3XC9hcGlcL2xvZ2luIiwiaWF0IjoxNTI0MDcwODg5LCJleHAiOjE1MjQwNzQ0ODksIm5iZiI6MTUyNDA3MDg4OSwianRpIjoiMmVkYzc3NzBmY2FhYWQ1MGYzMGJiNmU2MDcyYzNiMGIifQ.Hz9p62cZu3se8eaAY8xQ4lLUBHnAmmXfDNAiMyWTzgI"
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIyLCJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6MTMzN1wvYXBpXC9sb2dpbiIsImlhdCI6MTUyNDE2MTAwNywiZXhwIjoxNTI0MTY0NjA3LCJuYmYiOjE1MjQxNjEwMDcsImp0aSI6ImNiYmIxMmM1MzJkZmEyNGUzYmNjMTk0MTYyZjUzZDM5In0.dpC2txkkhsVQkLYoVxxj5HFZELxxKVcqIzrnS9jj2EA"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\" : \"teste\",\r\n    \"date_due\" : \"2018-04-18\",\r\n    \"value\" : 23.31,\r\n    \"category_id\" : 1\r\n}"
+					"raw": "{\r\n    \"name\" : \"teste\",\r\n    \"date_due\" : \"2018-04-18\",\r\n    \"value\" : 32.31,\r\n    \"category_id\" : 51\r\n}"
 				},
 				"url": {
 					"raw": "http://localhost:1337/api/bill_pays",
@@ -587,6 +623,44 @@
 					"path": [
 						"api",
 						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BillPays - Retrieve (cRud) - Total",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIyLCJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6MTMzN1wvYXBpXC9sb2dpbiIsImlhdCI6MTUyNDE2MTAwNywiZXhwIjoxNTI0MTY0NjA3LCJuYmYiOjE1MjQxNjEwMDcsImp0aSI6ImNiYmIxMmM1MzJkZmEyNGUzYmNjMTk0MTYyZjUzZDM5In0.dpC2txkkhsVQkLYoVxxj5HFZELxxKVcqIzrnS9jj2EA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"admin@schoolofnet.com\",\r\n    \"password\" : \"secret\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:1337/api/bill_pays/total",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"bill_pays",
+						"total"
 					]
 				}
 			},

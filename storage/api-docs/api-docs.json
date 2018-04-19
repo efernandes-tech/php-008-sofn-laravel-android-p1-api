@@ -7,7 +7,7 @@
     "paths": {
         "/api/login": {
             "post": {
-                "summary": "Requisitar token JWT.",
+                "summary": "Requisitar token JWT",
                 "parameters": [
                     {
                         "name": "body",
@@ -16,11 +16,11 @@
                         "schema": {
                             "properties": {
                                 "email": {
-                                    "description": "Requisitar token JWT.",
+                                    "description": "Requisitar token JWT",
                                     "type": "string"
                                 },
                                 "password": {
-                                    "description": "Requisitar token JWT.",
+                                    "description": "Requisitar token JWT",
                                     "type": "string"
                                 }
                             }
