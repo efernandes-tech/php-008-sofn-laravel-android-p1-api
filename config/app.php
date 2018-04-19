@@ -170,6 +170,7 @@ return [
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
         HipsterJazzbo\Landlord\LandlordServiceProvider::class,
         L5Swagger\L5SwaggerServiceProvider::class,
+        Barryvdh\Cors\ServiceProvider::class,
         //
 
         /*

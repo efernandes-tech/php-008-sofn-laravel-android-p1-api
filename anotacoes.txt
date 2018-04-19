@@ -86,3 +86,8 @@ PHP - SchoolOfNet - Laravel com Android - Parte 1
         php artisan l5-swagger:publish
     - Acessar.
         http://localhost:1337/api/documentation
+- Configurando CORS.
+    - Instalação.
+        composer require barryvdh/laravel-cors:0.8.2
+    - Publicar.
+         php artisan vendor:publish --provider="Barryvdh\Cors\ServiceProvider"
