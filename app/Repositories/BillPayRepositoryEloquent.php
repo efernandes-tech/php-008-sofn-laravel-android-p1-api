@@ -2,8 +2,10 @@
 
 namespace SON\Repositories;
 
+use Illuminate\Database\Eloquent\Collection;
 use Prettus\Repository\Eloquent\BaseRepository;
 use Prettus\Repository\Criteria\RequestCriteria;
+use SON\Presenters\BillPayPresenter;
 use SON\Models\BillPay;
 
 /**
@@ -29,6 +31,11 @@ class BillPayRepositoryEloquent extends BaseRepository implements BillPayReposit
     public function boot()
     {
         $this->pushCriteria(app(RequestCriteria::class));
+    }
+
+    public function presenter()
+    {
+        return BillPayPresenter::class;
     }
 
     public function applyMultitenancy()

@@ -1,6 +1,8 @@
 PHP - SchoolOfNet - Laravel com Android - Parte 1
 
 # Anotações
+- Servidor.
+    php -S localhost:1337 -t public public\index.php
 - Introdução.
     Criando novo projeto laravel.
         composer create-project --prefer-dist laravel/laravel:5.3.* php-008-son-laravel-android
@@ -72,3 +74,6 @@ PHP - SchoolOfNet - Laravel com Android - Parte 1
 - Testando Multitenancy.
     - Criando middleware.
         php artisan make:middleware TenantMiddleware
+- Iniciando com fractal.
+    - Instalação.
+        composer require league/fractal
