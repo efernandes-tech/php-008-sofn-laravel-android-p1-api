@@ -164,4 +164,8 @@ class BillPaysController extends Controller
             ], 500);
         }
     }
+
+    public function calculateTotal(){
+        return $this->repository->calculateTotal();
+    }
 }
