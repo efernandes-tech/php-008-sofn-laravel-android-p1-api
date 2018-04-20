@@ -26,13 +26,13 @@ class CategoriesController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @SWG\GET(
+     * @Swagger\GET(
      *     path="/api/categories",
      *     description="Listar categorias",
-     *     @SWG\Parameter(
+     *     @Swagger\Parameter(
      *          name="Authorization", in="header", type="string", description="Bearer __token__"
      *     ),
-     *     @SWG\Response(response="200", description="Coleção de categorias")
+     *     @Swagger\Response(response="200", description="Coleção de categorias")
      * )
      *
      * @return \Illuminate\Http\Response
@@ -45,22 +45,22 @@ class CategoriesController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @SWG\POST(
+     * @Swagger\POST(
      *     path="/api/categories",
      *     description="Criar categoria",
-     *     @SWG\Parameter(
+     *     @Swagger\Parameter(
      *          name="Authorization", in="header", type="string", description="Bearer __token__"
      *     ),
-     *     @SWG\Parameter(
+     *     @Swagger\Parameter(
      *          name="body", in="body", required=true,
-     *       @SWG\Schema(
-     *          @SWG\Property(
+     *       @Swagger\Schema(
+     *          @Swagger\Property(
      *              property="name",
      *              type="string"
      *          ),
      *       )
      *          ),
-     *     @SWG\Response(response="201", description="Categoria criada")
+     *     @Swagger\Response(response="201", description="Categoria criada")
      * )
      * @param  CategoryRequest $request
      *
@@ -76,16 +76,16 @@ class CategoriesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @SWG\GET(
+     * @Swagger\GET(
      *     path="/api/categories/{id}",
      *     description="Listar uma categoria",
-     *     @SWG\Parameter(
+     *     @Swagger\Parameter(
      *          name="Authorization", in="header", type="string", description="Bearer __token__"
      *     ),
-     *     @SWG\Parameter(
+     *     @Swagger\Parameter(
      *          name="id", in="path", required=true, type="integer"
      *          ),
-     *     @SWG\Response(response="200", description="Categoria encontrada")
+     *     @Swagger\Response(response="200", description="Categoria encontrada")
      * )
      * @param  int $id
      *
@@ -100,25 +100,25 @@ class CategoriesController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @SWG\PUT(
+     * @Swagger\PUT(
      *     path="/api/categories/{id}",
      *     description="Atualizar categoria",
-     *     @SWG\Parameter(
+     *     @Swagger\Parameter(
      *          name="Authorization", in="header", type="string", description="Bearer __token__"
      *     ),
-     *     @SWG\Parameter(
+     *     @Swagger\Parameter(
      *          name="id", in="path", required=true, type="integer"
      *     ),
-     *     @SWG\Parameter(
+     *     @Swagger\Parameter(
      *          name="body", in="body", required=true,
-     *       @SWG\Schema(
-     *          @SWG\Property(
+     *       @Swagger\Schema(
+     *          @Swagger\Property(
      *              property="name",
      *              type="string"
      *          ),
      *       )
      *          ),
-     *     @SWG\Response(response="201", description="Categoria atualizada")
+     *     @Swagger\Response(response="201", description="Categoria atualizada")
      * )
      * @param CategoryRequest $request
      * @param  string $id
@@ -134,16 +134,16 @@ class CategoriesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @SWG\DELETE(
+     * @Swagger\DELETE(
      *     path="/api/categories/{id}",
      *     description="Excluir categoria",
-     *     @SWG\Parameter(
+     *     @Swagger\Parameter(
      *          name="Authorization", in="header", type="string", description="Bearer __token__"
      *     ),
-     *     @SWG\Parameter(
+     *     @Swagger\Parameter(
      *          name="id", in="path", required=true, type="integer"
      *     ),
-     *     @SWG\Response(response="204", description="No content")
+     *     @Swagger\Response(response="204", description="No content")
      * )
      * @param  int $id
      *
