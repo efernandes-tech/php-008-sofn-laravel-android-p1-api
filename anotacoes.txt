@@ -19,6 +19,8 @@ PHP - SchoolOfNet - Laravel com Android - Parte 1
         - Tmb Adicionar o Add-ons para o banco de dados.
             Heroku Postgres
         - Configurar as variaveis do ".env" no Heroku.
+- Rodar migrations.
+    heroku run "php artisan migrate"
 - Subir arquivos para o Heroku.
     git add .
     git commit -m "deploy"
