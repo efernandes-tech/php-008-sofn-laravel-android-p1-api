@@ -1,5 +1,22 @@
 PHP - SchoolOfNet - Laravel com Android - Parte 1
 
+# Deploy No Heroku.
+- Na linha de comando.
+    heroku login
+- Criando aplicação.
+    heroku create php-008-son-lar-and-p1-api
+- Criar arquivo de configuração do ambiente para o Heroku.
+    "Procfile"
+        web: vendor/bin/heroku-php-apache2 public/
+- Criar no Heroku, na pagina de configs da app, as variaveis de ambiente para a base de dados.
+- Subir arquivos para o Heroku.
+    git add .
+    git commit -m "deploy"
+    git remote -v
+    git push heroku master
+- Conferir os logs de deploy.
+    heroku logs --tail
+
 # Anotações
 - Servidor.
     php -S localhost:1337 -t public public\index.php
