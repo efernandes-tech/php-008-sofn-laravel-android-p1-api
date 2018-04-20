@@ -16,7 +16,7 @@ class AuthController extends Controller
     /**
      * Requisitar token JWT
      *
-     * @SWG\POST(
+     * @SWG\Post(
      *     path="/api/login",
      *     @SWG\Parameter(
      *          name="body", in="body", required=true,
@@ -49,7 +49,7 @@ class AuthController extends Controller
 
     /**
      * Revogar token JWT
-     * @SWG\POST(
+     * @SWG\Post(
      *     path="/api/logout",
      *     @SWG\Parameter(
      *          name="Authorization", in="header", type="string", description="Bearer __token__"
@@ -69,7 +69,7 @@ class AuthController extends Controller
 
     /**
      * Renovar token JWT
-     * @SWG\POST(
+     * @SWG\Post(
      *     path="/api/refresh_token",
      *     @SWG\Parameter(
      *          name="Authorization", in="header", type="string", description="Bearer __token__"
