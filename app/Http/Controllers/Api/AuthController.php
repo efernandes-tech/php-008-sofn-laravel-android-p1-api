@@ -49,12 +49,12 @@ class AuthController extends Controller
 
     /**
      * Revogar token JWT
-     * @SWG\POST(
+     * @Swagger\POST(
      *     path="/api/logout",
-     *     @SWG\Parameter(
+     *     @Swagger\Parameter(
      *          name="Authorization", in="header", type="string", description="Bearer __token__"
      *     ),
-     *     @SWG\Response(response="204", description="No content")
+     *     @Swagger\Response(response="204", description="No content")
      * )
      */
     public function logout()
@@ -69,12 +69,12 @@ class AuthController extends Controller
 
     /**
      * Renovar token JWT
-     * @SWG\POST(
+     * @Swagger\POST(
      *     path="/api/refresh_token",
-     *     @SWG\Parameter(
+     *     @Swagger\Parameter(
      *          name="Authorization", in="header", type="string", description="Bearer __token__"
      *     ),
-     *     @SWG\Response(response="200", description="Token JWT")
+     *     @Swagger\Response(response="200", description="Token JWT")
      * )
      */
     public function refreshToken(Request $request)
