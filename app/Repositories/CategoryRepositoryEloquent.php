@@ -13,8 +13,6 @@ use SON\Presenters\CategoryPresenter;
  */
 class CategoryRepositoryEloquent extends BaseRepository implements CategoryRepository
 {
-    use BaseRepository;
-
     /**
      * Specify Model class name
      *
@@ -43,29 +41,5 @@ class CategoryRepositoryEloquent extends BaseRepository implements CategoryRepos
     public function applyMultitenancy()
     {
         Category::clearBootedModels();
-    }
-
-    protected function callScope(callable $scope, $parameters = [])
-    {
-        array_unshift($parameters, $this);
-
-        $query = $this->getQuery();
-
-        // We will keep track of how many wheres are on the query before running the
-        // scope so that we can properly group the added scope constraints in the
-        // query as their own isolated nested where statement and avoid issues.
-        $originalWhereCount = count(
-            ! is_null($query->wheres)
-            ? $query->wheres
-            : []
-        );
-
-        $result = $scope(...array_values($parameters)) ?: $this;
-
-        if ($this->shouldNestWheresForScope($query, $originalWhereCount)) {
-            $this->nestWheresForScope($query, $originalWhereCount);
-        }
-
-        return $result;
     }
 }
