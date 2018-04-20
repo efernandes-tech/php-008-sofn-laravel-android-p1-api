@@ -9,23 +9,23 @@ use Tymon\JWTAuth\Exceptions\JWTException;
 class AuthController extends Controller
 {
     /**
-     * @SWG\Info(title="School of Net - SON Financeiro API", version="0.0.1")
+     * @Swagger\Info(title="School of Net - SON Financeiro API", version="0.0.1")
      */
 
 
     /**
      * Requisitar token JWT
      *
-     * @SWG\POST(
+     * @Swagger\POST(
      *     path="/api/login",
-     *     @SWG\Parameter(
+     *     @Swagger\Parameter(
      *          name="body", in="body", required=true,
-     *          @SWG\Schema(
-     *              @SWG\Property(property="email", type="string"),
-     *              @SWG\Property(property="password", type="string"),
+     *          @Swagger\Schema(
+     *              @Swagger\Property(property="email", type="string"),
+     *              @Swagger\Property(property="password", type="string"),
      *          )
      *     ),
-     *     @SWG\Response(
+     *     @Swagger\Response(
      *      response="200", description="Token JWT"
      *     )
      * )
