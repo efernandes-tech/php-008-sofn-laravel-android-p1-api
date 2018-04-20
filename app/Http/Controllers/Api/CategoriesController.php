@@ -26,7 +26,7 @@ class CategoriesController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @SWG\GET(
+     * @SWG\Get(
      *     path="/api/categories",
      *     description="Listar categorias",
      *     @SWG\Parameter(
@@ -45,7 +45,7 @@ class CategoriesController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @SWG\POST(
+     * @SWG\Post(
      *     path="/api/categories",
      *     description="Criar categoria",
      *     @SWG\Parameter(
@@ -76,7 +76,7 @@ class CategoriesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @SWG\GET(
+     * @SWG\Get(
      *     path="/api/categories/{id}",
      *     description="Listar uma categoria",
      *     @SWG\Parameter(
@@ -100,7 +100,7 @@ class CategoriesController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @SWG\PUT(
+     * @SWG\Put(
      *     path="/api/categories/{id}",
      *     description="Atualizar categoria",
      *     @SWG\Parameter(
@@ -134,7 +134,7 @@ class CategoriesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @SWG\DELETE(
+     * @SWG\Delete(
      *     path="/api/categories/{id}",
      *     description="Excluir categoria",
      *     @SWG\Parameter(

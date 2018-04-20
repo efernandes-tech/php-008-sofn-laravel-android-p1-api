@@ -25,7 +25,7 @@ class BillPaysController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @SWG\GET(
+     * @SWG\Get(
      *     path="/api/bill_pays",
      *     description="Listar contas a pagar",
      *     @SWG\Parameter(
@@ -44,7 +44,7 @@ class BillPaysController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @SWG\POST(
+     * @SWG\Post(
      *     path="/api/bill_pays",
      *     description="Criar conta a pagar",
      *     @SWG\Parameter(
@@ -76,7 +76,7 @@ class BillPaysController extends Controller
     /**
      * Display the specified resource.
      *
-     * @SWG\GET(
+     * @SWG\Get(
      *     path="/api/bill_pays/{id}",
      *     description="Listar uma conta a pagar",
      *     @SWG\Parameter(
@@ -101,7 +101,7 @@ class BillPaysController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * * @SWG\PUT(
+     * * @SWG\Put(
      *     path="/api/bill_pays/{id}",
      *     description="Atualizar conta a pagar",
      *     @SWG\Parameter(
@@ -137,7 +137,7 @@ class BillPaysController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     *  @SWG\DELETE(
+     *  @SWG\Delete(
      *     path="/api/bill_pays/{id}",
      *     description="Excluir conta a pagar",
      *     @SWG\Parameter(
