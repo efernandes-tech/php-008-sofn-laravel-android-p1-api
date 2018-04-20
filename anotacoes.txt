@@ -16,6 +16,9 @@ PHP - SchoolOfNet - Laravel com Android - Parte 1
     "Procfile"
         web: vendor/bin/heroku-php-apache2 public/
 - Criar no Heroku, na pagina de configs da app, as variaveis de ambiente para a base de dados.
+        - Tmb Adicionar o Add-ons para o banco de dados.
+            Heroku Postgres
+        - Configurar as variaveis do ".env" no Heroku.
 - Subir arquivos para o Heroku.
     git add .
     git commit -m "deploy"
