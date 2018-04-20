@@ -9,7 +9,7 @@ PHP - SchoolOfNet - Laravel com Android - Parte 1
     heroku config:add \
     BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-multi.git
 - Editiando buildpack.
-    .buildpack
+    ".buildpack"
         https://github.com/heroku/heroku-buildpack-nodejs
         https://github.com/heroku/heroku-buildpack-php
 - Criar arquivo de configuração do ambiente para o Heroku.
