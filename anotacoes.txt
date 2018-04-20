@@ -5,6 +5,13 @@ PHP - SchoolOfNet - Laravel com Android - Parte 1
     heroku login
 - Criando aplicação.
     heroku create php-008-son-lar-and-p1-api
+- Criar multi buildpack.
+    heroku config:add \
+    BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-multi.git
+- Editiando buildpack.
+    .buildpack
+        https://github.com/heroku/heroku-buildpack-nodejs
+        https://github.com/heroku/heroku-buildpack-php
 - Criar arquivo de configuração do ambiente para o Heroku.
     "Procfile"
         web: vendor/bin/heroku-php-apache2 public/
