@@ -11,13 +11,12 @@ class Category extends Model implements Transformable
 {
     use TransformableTrait;
     use BelongsToTenants;
-    use Model;
 
     protected $fillable = [
         'name'
     ];
 
-    protected function callScope(callable $scope, $parameters = [])
+    public function callScope(callable $scope, $parameters = [])
     {
         array_unshift($parameters, $this);
 
