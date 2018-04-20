@@ -9,23 +9,23 @@ use Tymon\JWTAuth\Exceptions\JWTException;
 class AuthController extends Controller
 {
     /**
-     * @Swagger\Info(title="School of Net - SON Financeiro API", version="0.0.1")
+     * @SWG\Info(title="School of Net - SON Financeiro API", version="0.0.1")
      */
 
 
     /**
      * Requisitar token JWT
      *
-     * @Swagger\POST(
+     * @SWG\POST(
      *     path="/api/login",
-     *     @Swagger\Parameter(
+     *     @SWG\Parameter(
      *          name="body", in="body", required=true,
-     *          @Swagger\Schema(
-     *              @Swagger\Property(property="email", type="string"),
-     *              @Swagger\Property(property="password", type="string"),
+     *          @SWG\Schema(
+     *              @SWG\Property(property="email", type="string"),
+     *              @SWG\Property(property="password", type="string"),
      *          )
      *     ),
-     *     @Swagger\Response(
+     *     @SWG\Response(
      *      response="200", description="Token JWT"
      *     )
      * )
@@ -49,12 +49,12 @@ class AuthController extends Controller
 
     /**
      * Revogar token JWT
-     * @Swagger\POST(
+     * @SWG\POST(
      *     path="/api/logout",
-     *     @Swagger\Parameter(
+     *     @SWG\Parameter(
      *          name="Authorization", in="header", type="string", description="Bearer __token__"
      *     ),
-     *     @Swagger\Response(response="204", description="No content")
+     *     @SWG\Response(response="204", description="No content")
      * )
      */
     public function logout()
@@ -69,12 +69,12 @@ class AuthController extends Controller
 
     /**
      * Renovar token JWT
-     * @Swagger\POST(
+     * @SWG\POST(
      *     path="/api/refresh_token",
-     *     @Swagger\Parameter(
+     *     @SWG\Parameter(
      *          name="Authorization", in="header", type="string", description="Bearer __token__"
      *     ),
-     *     @Swagger\Response(response="200", description="Token JWT")
+     *     @SWG\Response(response="200", description="Token JWT")
      * )
      */
     public function refreshToken(Request $request)

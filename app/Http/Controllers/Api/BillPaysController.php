@@ -25,13 +25,13 @@ class BillPaysController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @Swagger\GET(
+     * @SWG\GET(
      *     path="/api/bill_pays",
      *     description="Listar contas a pagar",
-     *     @Swagger\Parameter(
+     *     @SWG\Parameter(
      *          name="Authorization", in="header", type="string", description="Bearer __token__"
      *     ),
-     *     @Swagger\Response(response="200", description="Coleção de contas a pagar")
+     *     @SWG\Response(response="200", description="Coleção de contas a pagar")
      * )
      * @return \Illuminate\Http\Response
      */
@@ -44,22 +44,22 @@ class BillPaysController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @Swagger\POST(
+     * @SWG\POST(
      *     path="/api/bill_pays",
      *     description="Criar conta a pagar",
-     *     @Swagger\Parameter(
+     *     @SWG\Parameter(
      *          name="Authorization", in="header", type="string", description="Bearer __token__"
      *     ),
-     *     @Swagger\Parameter(
+     *     @SWG\Parameter(
      *          name="body", in="body", required=true,
-     *       @Swagger\Schema(
-     *          @Swagger\Property( property="name", type="string" ),
-     *          @Swagger\Property( property="date_due", type="string", format="date"),
-     *          @Swagger\Property( property="value", type="number"),
-     *          @Swagger\Property( property="category_id", type="integer"),
+     *       @SWG\Schema(
+     *          @SWG\Property( property="name", type="string" ),
+     *          @SWG\Property( property="date_due", type="string", format="date"),
+     *          @SWG\Property( property="value", type="number"),
+     *          @SWG\Property( property="category_id", type="integer"),
      *       )
      *          ),
-     *     @Swagger\Response(response="201", description="Conta a pagar criada")
+     *     @SWG\Response(response="201", description="Conta a pagar criada")
      * )
      * @param  BillPayRequest $request
      *
@@ -76,16 +76,16 @@ class BillPaysController extends Controller
     /**
      * Display the specified resource.
      *
-     * @Swagger\GET(
+     * @SWG\GET(
      *     path="/api/bill_pays/{id}",
      *     description="Listar uma conta a pagar",
-     *     @Swagger\Parameter(
+     *     @SWG\Parameter(
      *          name="Authorization", in="header", type="string", description="Bearer __token__"
      *     ),
-     *     @Swagger\Parameter(
+     *     @SWG\Parameter(
      *          name="id", in="path", required=true, type="integer"
      *          ),
-     *     @Swagger\Response(response="200", description="Conta a pagar encontrada")
+     *     @SWG\Response(response="200", description="Conta a pagar encontrada")
      * )
      *
      * @param  int $id
@@ -101,26 +101,26 @@ class BillPaysController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * * @Swagger\PUT(
+     * * @SWG\PUT(
      *     path="/api/bill_pays/{id}",
      *     description="Atualizar conta a pagar",
-     *     @Swagger\Parameter(
+     *     @SWG\Parameter(
      *          name="Authorization", in="header", type="string", description="Bearer __token__"
      *     ),
-     *     @Swagger\Parameter(
+     *     @SWG\Parameter(
      *          name="id", in="path", required=true, type="integer"
      *          ),
-     *     @Swagger\Parameter(
+     *     @SWG\Parameter(
      *          name="body", in="body", required=true,
-     *       @Swagger\Schema(
-     *          @Swagger\Property( property="name", type="string" ),
-     *          @Swagger\Property( property="date_due", type="string", format="date"),
-     *          @Swagger\Property( property="value", type="number"),
-     *          @Swagger\Property( property="category_id", type="integer"),
-     *          @Swagger\Property( property="done", type="boolean"),
+     *       @SWG\Schema(
+     *          @SWG\Property( property="name", type="string" ),
+     *          @SWG\Property( property="date_due", type="string", format="date"),
+     *          @SWG\Property( property="value", type="number"),
+     *          @SWG\Property( property="category_id", type="integer"),
+     *          @SWG\Property( property="done", type="boolean"),
      *       )
      *          ),
-     *     @Swagger\Response(response="201", description="Conta a pagar atualizada")
+     *     @SWG\Response(response="201", description="Conta a pagar atualizada")
      * )
      * @param  BillPayRequest $request
      * @param  string $id
@@ -137,16 +137,16 @@ class BillPaysController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     *  @Swagger\DELETE(
+     *  @SWG\DELETE(
      *     path="/api/bill_pays/{id}",
      *     description="Excluir conta a pagar",
-     *     @Swagger\Parameter(
+     *     @SWG\Parameter(
      *          name="Authorization", in="header", type="string", description="Bearer __token__"
      *     ),
-     *     @Swagger\Parameter(
+     *     @SWG\Parameter(
      *          name="id", in="path", required=true, type="integer"
      *     ),
-     *     @Swagger\Response(response="204", description="No content")
+     *     @SWG\Response(response="204", description="No content")
      * )
      * @param  int $id
      *
