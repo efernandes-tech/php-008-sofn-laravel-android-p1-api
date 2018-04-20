@@ -13,6 +13,8 @@ use SON\Presenters\CategoryPresenter;
  */
 class CategoryRepositoryEloquent extends BaseRepository implements CategoryRepository
 {
+    use BaseRepository;
+
     /**
      * Specify Model class name
      *
