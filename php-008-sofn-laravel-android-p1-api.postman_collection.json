@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "db9d599f-4958-4650-9c31-831575689339",
-		"name": "php-008-son-laravel-android",
+		"_postman_id": "2c5faecb-c9aa-4080-a61f-6260c3ed3f3d",
+		"name": "php-008-sofn-laravel-android-p1-api",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -376,43 +376,6 @@
 			"response": []
 		},
 		{
-			"name": "BillPays - Retrieve (cRud) - Listar todos Copy",
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json"
-					},
-					{
-						"key": "Content-Type",
-						"value": "application/json"
-					},
-					{
-						"key": "Authorization",
-						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIyLCJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6MTMzN1wvYXBpXC9sb2dpbiIsImlhdCI6MTUyNDE2MTAwNywiZXhwIjoxNTI0MTY0NjA3LCJuYmYiOjE1MjQxNjEwMDcsImp0aSI6ImNiYmIxMmM1MzJkZmEyNGUzYmNjMTk0MTYyZjUzZDM5In0.dpC2txkkhsVQkLYoVxxj5HFZELxxKVcqIzrnS9jj2EA"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"email\" : \"admin@schoolofnet.com\",\r\n    \"password\" : \"secret\"\r\n}"
-				},
-				"url": {
-					"raw": "http://localhost:1337/api/bill_pays",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "1337",
-					"path": [
-						"api",
-						"bill_pays"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "BillPays - Create (Crud) - Cadastrar",
 			"request": {
 				"method": "POST",
@@ -661,6 +624,150 @@
 						"api",
 						"bill_pays",
 						"total"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Heroku - Users - Criar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\" : \"Teste\",\r\n    \"email\" : \"teste@schoolofnet.com\",\r\n    \"password\" : \"secret\"\r\n}"
+				},
+				"url": {
+					"raw": "https://php-008-sofn-lar-and-p1-api.herokuapp.com/api/users",
+					"protocol": "https",
+					"host": [
+						"php-008-sofn-lar-and-p1-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Heroku - Users - Logar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"teste@schoolofnet.com\",\r\n    \"password\" : \"secret\"\r\n}"
+				},
+				"url": {
+					"raw": "https://php-008-sofn-lar-and-p1-api.herokuapp.com/api/login",
+					"protocol": "https",
+					"host": [
+						"php-008-sofn-lar-and-p1-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Heroku - Users - Listar",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL3BocC0wMDgtc29uLWxhci1hbmQtcDEtYXBpLmhlcm9rdWFwcC5jb21cL2FwaVwvbG9naW4iLCJpYXQiOjE1MjQyMzU5NzYsImV4cCI6MTUyNDIzOTU3NiwibmJmIjoxNTI0MjM1OTc2LCJqdGkiOiJlMjdhNzlhMWMyNzNiNWRmOTNlNTIzZjZjMDgxNjg1MCJ9.GdF_tzUwKoUPylWDUzDQwazCzljqc_wMwz9-sMOLQEI"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"admin@schoolofnet.com\",\r\n    \"password\" : \"secret\"\r\n}"
+				},
+				"url": {
+					"raw": "https://php-008-sofn-lar-and-p1-api.herokuapp.com/api/categories",
+					"protocol": "https",
+					"host": [
+						"php-008-sofn-lar-and-p1-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Heroku - Categories - Create (Crud) - Cadastrar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cL3BocC0wMDgtc29uLWxhci1hbmQtcDEtYXBpLmhlcm9rdWFwcC5jb21cL2FwaVwvbG9naW4iLCJpYXQiOjE1MjQyMzA4ODksImV4cCI6MTUyNDIzNDQ4OSwibmJmIjoxNTI0MjMwODg5LCJqdGkiOiJmNTQxZjhjNzIyM2M5ZWQ4YzRjNTUwZjVmMmVlNjY4NyJ9.u41FPWCwTAMTZaps9uf65SbG8m7ej04V4R0HOeyBEww"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Categoria 1\"\r\n}"
+				},
+				"url": {
+					"raw": "https://php-008-sofn-lar-and-p1-api.herokuapp.com/api/categories",
+					"protocol": "https",
+					"host": [
+						"php-008-sofn-lar-and-p1-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"categories"
 					]
 				}
 			},
